@@ -13,15 +13,6 @@
     function media(){
         return BASE_URL."Recursos/";
     }
-    function mediaJonathancss(){
-        return BASE_URL."Recursos/css/parteJonathan/";
-    }
-    function mediaJonathanjs(){
-        return BASE_URL."Recursos/js/parteJonathan/";
-    }
-    function mediaJonathanimages(){
-        return BASE_URL."Recursos/images/parteJonathan/";
-    }
     function mediaEdwincss(){
         return BASE_URL."Recursos/css/parteEdwin/";
     }

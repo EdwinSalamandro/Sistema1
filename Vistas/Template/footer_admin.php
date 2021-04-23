@@ -17,8 +17,14 @@
     <script type="text/javascript" src="<?=mediaStivenjs(); ?>/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="<?=mediaStivenjs(); ?>/plugins/dataTables.bootstrap.min.js"></script>
     
-    <script src="<?=mediaStivenjs(); ?>/functions_roles.js"></script>
     <script src="<?=mediaStivenjs(); ?>/js/<?= $data['page_functions_js']; ?>"></script>
+    
+    <?php if($data['page_name'] == "rol_usuario"){ ?>
+    <script src="<?=mediaStivenjs(); ?>/functions_roles.js"></script>
+    <?php } ?>
+    <?php if($data['page_name'] == "usuario"){ ?>
+    <script src="<?=mediaStivenjs(); ?>/functions_usuarios.js"></script>
+    <?php } ?>
 
   </body>
 </html>

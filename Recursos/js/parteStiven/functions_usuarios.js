@@ -1,8 +1,4 @@
 
-function openModal()
-{
-	$('modalFormUsuario').modal('show');
-
 
 function openModal()
 {

@@ -12,9 +12,9 @@ class Roles extends Controllers
     {
         $data['page_id'] = 3;
         $data['page_tag'] = "Roles Usuario";
-        $data['page_title'] = "rol_usuario";
+        $data['page_title'] = " Roles usuario <small>Tienda Virtual</small>";
         $data['page_functions_js'] = "functions_roles.js";
-        $data['page_name'] = "Roles usuario <small>Tienda Virtual</small>";
+        $data['page_name'] = "rol_usuario";
         $this->views->getView($this,"roles",$data);
     }
     public function getRoles()

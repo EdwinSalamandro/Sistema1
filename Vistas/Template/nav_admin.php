@@ -9,6 +9,10 @@
         </div>
       </div>
       <ul class="app-menu">
+          <li>
+          <a class="app-menu__item" href="<?= base_url(); ?>tienda"><i class="app-menu__icon fa fa-home"></i><span class="app-menu__label">Ir a la tienda</span>
+          </a>
+        </li>
         <li>
           <a class="app-menu__item" href="<?= base_url(); ?>administrador"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span>
           </a>

@@ -9,6 +9,12 @@
 class Errors extends Controllers {
 
     public function __construct() {
+        if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
+        if(empty($_SESSION['login']))
+        {
+            header('Location: '.base_url().'login');
+            die();
+        }
         parent::__construct();
     }
     public function notFound() {

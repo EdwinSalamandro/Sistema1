@@ -31,7 +31,17 @@ document.addEventListener('DOMContentLoaded', function(){
                     var objData= JSON.parse(request.responseText);
                     if(objData.status)
                     {
-                        window.location = base_url+'administrador';
+                        switch (objData.msg){
+                            case '1':
+                                window.location = base_url+'administrador';
+                                break;
+                            case '3':
+                                window.location = base_url+'tienda';
+                                break;
+                            default:
+                                window.location = base_url+'tienda';
+                                break;
+                        }
                     }else{
                         swal("Atención", objData.msg, "error");
                         document.querySelector('#txtPassword').value = "";
@@ -40,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     swal("Atención", "Error en el proceso","error");
                 }
 
-                console.log(request);
+                return false;
              
             }
           }       

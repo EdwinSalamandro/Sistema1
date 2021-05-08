@@ -12,7 +12,7 @@ class Login extends Controllers{
         session_start();
         if(isset($_SESSION['login']))
         {
-            header('Location: '.base_url().'administrador');
+            header('Location: '.base_url().'tienda');
         }
         parent::__construct();
     }
@@ -44,8 +44,22 @@ class Login extends Controllers{
 
                         $arrData = $this->model->sessionLogin($_SESSION['idUser']);
                         $_SESSION['userData'] = $arrData;
+                        $arrRol = $_SESSION['userData']['idrol'];
                         
-                        $arrResponse = array('status' => true, 'msg' => 'ok');
+                        switch ($arrRol){
+                        case 1:
+                            $arrResponse = array('status' => true, 'msg' => '1');
+                            break;
+                        case 2:
+                            $arrResponse = array('status' => true, 'msg' => '2');
+                            break;
+                        case 3:
+                            $arrResponse = array('status' => true, 'msg' =>'3');    
+                            break;
+                        default :
+                            $arrResponse = array('status' => true, 'msg' =>'3');    
+                            break;
+                        }                        
                     }else{
                         $arrResponse = array('status' => false, 'msg' => 'Usuario inactivo.');
                     }

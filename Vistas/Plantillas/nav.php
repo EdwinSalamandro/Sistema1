@@ -7,7 +7,7 @@
             <li><a href="<?php base_url(); ?>loMasVisto">Lo mas Visto</a></li>
             <li><a href="<?php base_url(); ?>seLeTrae"><span>Se le trae</span></a></li>
             <li><a href="<?php base_url(); ?>Ofertas"><span>Ofertas</span></a></li>
-            <li><a href="<?php base_url(); ?>home"><span>Cerrar Sesion</span></a></li>
+            <li><a href="<?php base_url(); ?>logout"><span>Cerrar Sesion</span></a></li>
         </ul>
     </div>
 </nav>

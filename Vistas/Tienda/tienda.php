@@ -19,7 +19,7 @@
         <?php 
         }
         ?>
-    </div>			
+    </div>
 </section>
 <?php footerTienda($data); 
-/* Stiven Sanchez */ ?>    
+/* Edwin Salamandro */ ?>    

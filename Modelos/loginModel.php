@@ -19,7 +19,7 @@
         {
             $this->strUsuario = $usuario;
             $this->strPassword = $password;
-            $sql = "SELECT idpersona,status FROM persona WHERE
+            $sql = "SELECT idpersona,status,rolid FROM persona WHERE
               email_user = '$this->strUsuario' and
               password = '$this->strPassword' and
               status != 0 ";

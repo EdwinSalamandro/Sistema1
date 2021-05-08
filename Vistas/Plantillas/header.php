@@ -42,13 +42,13 @@
                         <li><a href="<?php base_url(); ?>loMasVisto">Lo mas visto</a></li>
                         <li><a href="ofertas">Ofertas</a></li>
                         <li><a href="seLeTrae">Se le trae</a></li>
-                        <li><a href=""> USUARIO <img class="icono" src="<?= mediaEdwinimages(); ?>/iconos/mano.png"></a>
+                        <li><a href=""> <?php echo $_SESSION['userData']['nombres']; ?> <img class="icono" src="<?= mediaEdwinimages(); ?>/iconos/mano.png"></a>
                             <ul class="subMenu">
                                 <li><a href="<?php base_url(); ?>miConfiguracion">miConfiguracion</a></li>
                                 <li><a href="<?php base_url(); ?>">Mis compras</a></li>
                                 <li><a href="<?php base_url(); ?>favoritos">Mis favoritos</a></li>
                                 <li><a href="noEsta">PQRS</a></li>
-                                <li><a href="<?php base_url(); ?>home">Cerrar Sesión</a></li>
+                                <li><a href="<?= base_url(); ?>logout">Cerrar Sesión</a></li>
                             </ul>
                         </li>
                     </ul>
